@@ -1,2 +1,1 @@
-# Twittie (Twitter bot)
-My twitter bot 👋🏻
+# Election Countdown
