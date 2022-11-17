@@ -39,7 +39,7 @@ async function main() {
       days = `Tomorrow is the United State of America election Day! 🇺🇸`
       break;
     default:
-      days = `🇺🇸${daysLeft} days left until the United State of America Presidential Election Day! 🇺🇸`
+      days = `${daysLeft} days left until the United State of America Presidential Election Day! 🇺🇸`
       break;
   }
   

@@ -17,14 +17,11 @@ async function main() {
   let today = new Date();
   today.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' })
 
-  let ElecDay = new Date("May 7, 2023");
+  let ElecDay = new Date("March 31, 2024");
   let msPerDay = 24 * 60 * 60 * 1000;
   let timeLeft = (ElecDay.getTime() - today.getTime());
   let e_daysLeft = timeLeft / msPerDay;
   let daysLeft = Math.floor(e_daysLeft);
-  if (daysLeft > 365) {
-    daysLeft = daysLeft % 365;
-  }
 
   daysLeft = daysLeft + 1;
   let days: string;
@@ -32,20 +29,21 @@ async function main() {
   // Switch case that tweet daysleft
   switch (daysLeft) {
     case 0:
-      days = `Today is Thailand election Day! 🇹🇭`
+      days = `Today is Ukraine election Day! 🇺🇦 Glory to UKRAINE`
       break;
     case 1:
-      days = `Tomorrow is Thailand election Day! 🇹🇭`
+      days = `Tomorrow is Ukaine election Day! 🇺🇦 Glory to UKRAINE`
       break;
     default:
-      days = `${daysLeft} days left until Thailand Election Day! 🇹🇭`
+      days = `${daysLeft} days left until Ukraine Election Day! 🇺🇦 Glory to UKRAINE`
       break;
   }
   
   if ( daysLeft <= -1 ){
     console.log("Fail!")
   } else {
-    await client.v1.tweet(`${days}`)
+    // await client.v1.tweet(`${days}`)
+    console.log(days)
     console.log("🎉 Success! Updated Twitter statuses/update");
   }
 }
