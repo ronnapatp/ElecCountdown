@@ -26,3 +26,4 @@ jobs:
     - run: echo "TWITTER_ACCESS_TOKEN_SECRET=${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}" >> .env
     - run: ts-node TH-elec.ts
     - run: ts-node US-elec.ts
+    - run: ts-node UA-elec.ts
