@@ -42,8 +42,7 @@ async function main() {
   if ( daysLeft <= -1 ){
     console.log("Fail!")
   } else {
-    // await client.v1.tweet(`${days}`)
-    console.log(days)
+    await client.v1.tweet(`${days}`)
     console.log("🎉 Success! Updated Twitter statuses/update");
   }
 }
