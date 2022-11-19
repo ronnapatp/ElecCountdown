@@ -32,13 +32,13 @@ async function main() {
   // Switch case that tweet daysleft
   switch (daysLeft) {
     case 0:
-      days = `Today is Thailand election Day! 🇹🇭`
+      days = `Today is Thailand election Day! 🇹🇭 (${ElecDay.toLocaleDateString()})`
       break;
     case 1:
-      days = `Tomorrow is Thailand election Day! 🇹🇭`
+      days = `Tomorrow is Thailand election Day! 🇹🇭 (${ElecDay.toLocaleDateString()})`
       break;
     default:
-      days = `${daysLeft} days left until Thailand Election Day! 🇹🇭`
+      days = `${daysLeft} days left until Thailand Election Day! 🇹🇭 (${ElecDay.toLocaleDateString()})`
       break;
   }
   
