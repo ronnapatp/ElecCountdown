@@ -35,7 +35,7 @@ async function main() {
       days = `Tomorrow is Ukaine election Day! 🇺🇦 Glory to UKRAINE (${ElecDay.toLocaleDateString()})`
       break;
     default:
-      days = `${daysLeft} days left until Ukraine Election Day! 🇺🇦 Glory to UKRAINE (${ElecDay.toLocaleDateString()})`
+      days = `${daysLeft} day(s) left until Ukraine Election Day! 🇺🇦 Glory to UKRAINE (${ElecDay.toLocaleDateString()})`
       break;
   }
   

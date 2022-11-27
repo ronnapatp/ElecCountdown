@@ -35,7 +35,7 @@ async function main() {
       days = `Tomorrow is Taiwanese local election Day! 🇹🇼 (${ElecDay.toLocaleDateString()})`
       break;
     default:
-      days = `${daysLeft} days left until Taiwanese local election Day! 🇹🇼 (${ElecDay.toLocaleDateString()})`
+      days = `${daysLeft} day(s) left until Taiwanese local election Day! 🇹🇼 (${ElecDay.toLocaleDateString()})`
       break;
   }
   

@@ -17,14 +17,11 @@ async function main() {
   let today = new Date();
   today.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' })
 
-  let ElecDay = new Date("May 7, 2023");
+  let ElecDay = new Date("June 18, 2023");
   let msPerDay = 24 * 60 * 60 * 1000;
   let timeLeft = (ElecDay.getTime() - today.getTime());
   let e_daysLeft = timeLeft / msPerDay;
   let daysLeft = Math.floor(e_daysLeft);
-  if (daysLeft > 365) {
-    daysLeft = daysLeft % 365;
-  }
 
   daysLeft = daysLeft + 1;
   let days: string;
@@ -32,13 +29,13 @@ async function main() {
   // Switch case that tweet daysleft
   switch (daysLeft) {
     case 0:
-      days = `Today is Thailand election Day! 🇹🇭 (${ElecDay.toLocaleDateString()})`
+      days = `Today is Turkish general election Day! 🇹🇷 (${ElecDay.toLocaleDateString()})`
       break;
     case 1:
-      days = `Tomorrow is Thailand election Day! 🇹🇭 (${ElecDay.toLocaleDateString()})`
+      days = `Tomorrow is Turkish general election Day! 🇹🇷 (${ElecDay.toLocaleDateString()})`
       break;
     default:
-      days = `${daysLeft} day(s) left until Thailand Election Day! 🇹🇭 (${ElecDay.toLocaleDateString()})`
+      days = `${daysLeft} day(s) left until Turkish general election Day! 🇹🇷 (${ElecDay.toLocaleDateString()})`
       break;
   }
   
