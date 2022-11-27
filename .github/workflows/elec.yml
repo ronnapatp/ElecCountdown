@@ -27,4 +27,6 @@ jobs:
     - run: ts-node TH-elec.ts
     - run: ts-node US-elec.ts
     - run: ts-node UA-elec.ts
-    - run: ts-node TW-elec.ts
+    # - run: ts-node TW-elec.ts
+    - run: ts-node DE-elec.ts
+    - run: ts-node TR-elec.ts
