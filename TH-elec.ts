@@ -17,7 +17,7 @@ async function main() {
   let today = new Date();
   today.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' })
 
-  let ElecDay = new Date("May 7, 2023");
+  let ElecDay = new Date("May 14, 2023");
   let msPerDay = 24 * 60 * 60 * 1000;
   let timeLeft = (ElecDay.getTime() - today.getTime());
   let e_daysLeft = timeLeft / msPerDay;
